@@ -48,7 +48,7 @@ export function TokenForm() {
           type="submit"
         /> */}
       </form>
-      <div className="flex items-baseline space-x-2">
+      <div className="mt-3 flex items-center space-x-2">
         <IsConfigured />
         <CustomButton
           onClick={() => {
@@ -79,7 +79,7 @@ function IsConfigured() {
       });
   }, [setBearerToken]);
 
-  return <p className="mt-3 text-3xl">{bearerToken ? "✅" : "❌"}</p>;
+  return <p className="text-3xl">{bearerToken ? "✅" : "❌"}</p>;
 }
 
 type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
